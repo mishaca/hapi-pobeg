@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Хапи, побег</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8' shape-rendering='crispEdges'%3E%3Crect width='8' height='8' fill='%23141824'/%3E%3Crect x='1' y='1' width='1' height='6' fill='%23c8ccd8'/%3E%3Crect x='3' y='1' width='1' height='6' fill='%23c8ccd8'/%3E%3Crect x='5' y='1' width='1' height='6' fill='%23c8ccd8'/%3E%3Crect x='6' y='3' width='1' height='2' fill='%23e8a040'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="./fonts.css" />
+  <style>
+    html, body { margin: 0; height: 100%; background: #05060a; overflow: hidden; }
+    body { font-family: 'PressStart2P', monospace; }
+    #game { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; }
+    #game canvas { image-rendering: pixelated; image-rendering: crisp-edges; display: block; }
+    .px-input {
+      position: fixed; display: none; z-index: 10;
+      background: #0d0f17; color: #f2e6c8; border: 2px solid #e8a040; outline: none;
+      font-family: 'PressStart2P', monospace; padding: 6px 8px; box-sizing: border-box;
+      text-transform: none; letter-spacing: 1px;
+    }
+    .px-input::placeholder { color: #5a5f73; }
+    #boot-msg { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center;
+      color: #8a8fa3; font: 12px monospace; }
+  </style>
+  <script type="module" crossorigin src="./index-Cx9hMW86.js"></script>
+</head>
+<body>
+  <div id="boot-msg">Загрузка…</div>
+  <div id="game"></div>
+  <input id="chat-input" class="px-input" maxlength="60" autocomplete="off" spellcheck="false" placeholder="Сообщение… (Enter — отправить, Esc — отмена)" />
+  <input id="code-input" class="px-input" maxlength="4" autocomplete="off" spellcheck="false" placeholder="КОД" />
+</body>
+</html>
